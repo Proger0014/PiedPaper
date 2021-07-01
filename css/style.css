@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .section .team .team__column .team__item {
 	text-align: center;
-	width: 33.33%;
+	width: 33.333%;
 }
 .section .team .team__column .team__item .team__ava {
 	padding-bottom: 12px;
