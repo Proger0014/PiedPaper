@@ -15,7 +15,7 @@ $rob: 'Roboto', sans-serif;
     padding: 18px 0;
     background: #007765;
 
-    .header__inner {
+    &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
