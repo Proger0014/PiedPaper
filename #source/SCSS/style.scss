@@ -34,6 +34,11 @@ $rob: 'Roboto', sans-serif;
 
                 transition: color .2s linear;
 
+                &_active {
+                    color: #dfd7d7;
+                }
+
+
                 &:hover {
                     color: #dfd7d7;
                 }
@@ -98,9 +103,11 @@ $rob: 'Roboto', sans-serif;
         text-align: center;
 
         padding-bottom: 30px;
+
+
     }
 
-    &&_back1 {
+    &.section_back1 {
         padding: 80px 0 0;
     
         background: url(../img/back1.jpg) no-repeat center;
@@ -113,10 +120,12 @@ $rob: 'Roboto', sans-serif;
             color: #fff;
             font-size: 72px;
             line-height: 84px;
+
+
         }
     }
 
-    &&_grey {
+    &.section_grey {
         background: #EEEEEE;
     
         .section__text {
@@ -135,7 +144,7 @@ $rob: 'Roboto', sans-serif;
         }
     }
 
-    &&_back2 {
+    &.section_back2 {
         padding: 0;
     
         background: url(../img/back2.jpg) no-repeat center;
@@ -153,7 +162,7 @@ $rob: 'Roboto', sans-serif;
         }
     }
 
-    &&_wht {
+    &.section_wht {
         background: #fff;
     
         .section__text {

@@ -82,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 18px 0;
 	background: #007765;
 }
-.header .header__inner {
+.header__inner {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -93,12 +93,12 @@ h1, h2, h3, h4, h5, h6 {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.header .header__inner .nav {
+.header__inner .nav {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	font-size: 24px;
 }
-.header .header__inner .nav .nav__link {
+.header__inner .nav__link {
 	color: #fff;
 	margin: 0;
 	padding: 0;
@@ -106,10 +106,13 @@ h1, h2, h3, h4, h5, h6 {
 	-webkit-transition: color 0.2s linear;
 	transition: color 0.2s linear;
 }
-.header .header__inner .nav .nav__link:hover {
+.header__inner .nav__link_active {
 	color: #dfd7d7;
 }
-.header .header__inner .nav .nav__link::after {
+.header__inner .nav__link:hover {
+	color: #dfd7d7;
+}
+.header__inner .nav__link::after {
 	content: "";
 	display: inline-block;
 	position: relative;
@@ -121,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 	vertical-align: middle;
 	cursor: default;
 }
-.header .header__inner .nav .nav__link:last-child::after {
+.header__inner .nav__link:last-child::after {
 	display: none;
 }
 
@@ -144,11 +147,11 @@ h1, h2, h3, h4, h5, h6 {
 	width: 100%;
 	padding: 60px 0 90px;
 }
-.section .section__suptitle {
+.section__suptitle {
 	position: relative;
 	top: -100px;
 }
-.section .section__title {
+.section__title {
 	font-family: "Roboto", sans-serif;
 	font-weight: 500;
 	text-align: center;
@@ -225,32 +228,32 @@ h1, h2, h3, h4, h5, h6 {
 	    -ms-flex-flow: column wrap;
 	        flex-flow: column wrap;
 }
-.section .team .team__column {
+.section .team__column {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 }
-.section .team .team__column:first-child {
+.section .team__column:first-child {
 	padding: 20px 0 60px;
 }
-.section .team .team__column:last-child {
+.section .team__column:last-child {
 	padding-bottom: 20px;
 }
-.section .team .team__column .team__item {
+.section .team__column .team__item {
 	text-align: center;
 	width: 33.333%;
 }
-.section .team .team__column .team__item .team__ava {
+.section .team__column .team__item .team__ava {
 	padding-bottom: 12px;
 }
-.section .team .team__column .team__item .team__title {
+.section .team__column .team__item .team__title {
 	font-family: "Roboto", sans-serif;
 	color: #007765;
 	font-weight: 700;
 	font-size: 24px;
 	line-height: 28px;
 }
-.section .team .team__column .team__item .team__subtitle {
+.section .team__column .team__item .team__subtitle {
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
 	font-style: italic;
@@ -262,7 +265,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding: 50px 0 60px;
 	background: #333333;
 }
-.footer .footer__text {
+.footer__text {
 	max-width: 540px;
 	margin: 0 auto;
 	text-align: center;
